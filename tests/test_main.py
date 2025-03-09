@@ -1,7 +1,9 @@
 import pytest
-from src.main import your_function  # Replace with the actual function or class you want to test
+from src.main import main
 
-def test_your_function():
-    assert your_function(args) == expected_result  # Replace with actual arguments and expected result
+def test_main(capfd):
+    main()
+    out, err = capfd.readouterr()
+    assert out == "Hello, World!\n"
 
 # Add more test cases as needed
