@@ -57,6 +57,9 @@ jobs:
       - name: Run MyPy
         run: poetry run mypy my_python_project
 
+      - name: Run Black
+        run: poetry run black --check my_python_project tests
+
   test:
     runs-on: ubuntu-latest
     needs: build
