@@ -38,6 +38,6 @@ def test_main_as_script() -> None:
         check=True
     )
     assert result.stdout == "Hello, World!\n"
-    assert result.returncode == 0
+    assert not result.returncode
 
 # Add more test cases as needed
