@@ -1,9 +1,6 @@
 # My Python Project
 
-![Version](https://img.shields.io/github/v/release/dan-driver/my-python-project?label=version&logo=github)
-![Pylint](https://img.shields.io/github/workflow/status/dan-driver/my-python-project/CI?label=pylint&logo=github)
-![Flake8](https://img.shields.io/github/workflow/status/dan-driver/my-python-project/CI?label=flake8&logo=github)
-![Mypy](https://img.shields.io/github/workflow/status/dan-driver/my-python-project/CI?label=mypy&logo=github)
+![CI](https://github.com/dan-driver/my-python-project/actions/workflows/ci.yml/badge.svg)
 
 This is a base python project with project configuration with QA and CI setup as a starting point for other projects.
 
@@ -24,7 +21,7 @@ Make sure you have Python 3.6 or higher installed on your machine.
 
 ### Installation
 1. Clone the repository:
-   ```
+   ```sh
    git clone https://github.com/yourusername/my-python-project.git
    ```
 2. Navigate into the project directory:
