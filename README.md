@@ -2,10 +2,10 @@
 
 [![CI](https://github.com/dan-driver/my_python_project/actions/workflows/ci.yml/badge.svg)](https://github.com/dan-driver/my_python_project/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/dan-driver/my_python_project/graph/badge.svg?token=ABECRCOUG2)](https://codecov.io/gh/dan-driver/my_python_project)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![mypy](https://img.shields.io/badge/type%20checker-mypy-blue)](http://mypy-lang.org/)
 [![pylint](https://img.shields.io/badge/lint-pylint-yellowgreen)](https://pylint.pycqa.org/)
 [![flake8](https://img.shields.io/badge/lint-flake8-green)](https://flake8.pycqa.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
 This is a base python project with project configuration with QA and CI setup as a starting point for other projects.
