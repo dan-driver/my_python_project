@@ -1,8 +1,9 @@
 # My Python Project
 
-![Pylint](https://img.shields.io/github/workflow/status/<your-github-username>/<your-repo-name>/CI?label=pylint&logo=github)
-![Flake8](https://img.shields.io/github/workflow/status/<your-github-username>/<your-repo-name>/CI?label=flake8&logo=github)
-![Mypy](https://img.shields.io/github/workflow/status/<your-github-username>/<your-repo-name>/CI?label=mypy&logo=github)
+![Version](https://img.shields.io/github/v/release/dan-driver/my-python-project?label=version&logo=github)
+![Pylint](https://img.shields.io/github/workflow/status/dan-driver/my-python-project/CI?label=pylint&logo=github)
+![Flake8](https://img.shields.io/github/workflow/status/dan-driver/my-python-project/CI?label=flake8&logo=github)
+![Mypy](https://img.shields.io/github/workflow/status/dan-driver/my-python-project/CI?label=mypy&logo=github)
 
 This is a base python project with project configuration with QA and CI setup as a starting point for other projects.
 
