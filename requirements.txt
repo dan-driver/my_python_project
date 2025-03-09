@@ -1,6 +1,0 @@
-pytest
-transformers
-torch
-pylint
-mypy
-black
