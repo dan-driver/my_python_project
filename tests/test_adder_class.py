@@ -17,4 +17,5 @@ def test_adder_class() -> None:
     result = adder.add()
     assert result == 15
 
+
 # Add more test cases as needed
