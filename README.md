@@ -4,7 +4,7 @@
 This project is a Python application that includes a main module and corresponding tests. It is set up with various tools for code quality and continuous integration.
 
 ## Features
-- Main application logic implemented in `src/main.py`
+- Main application logic implemented in `my_python_project/main.py`
 - Unit tests using `pytest` located in `tests/test_main.py`
 - Code linting with `Pylint` and `Flake8`
 - Type checking with `MyPy`
@@ -32,7 +32,7 @@ Make sure you have Python 3.6 or higher installed on your machine.
 ### Usage
 To run the main application, execute:
 ```
-python src/main.py
+python my_python_project/main.py
 ```
 
 ### Running Tests
@@ -44,17 +44,17 @@ pytest tests/
 ### Linting
 To check the code quality, run:
 ```
-pylint src/
+pylint my_python_project/
 ```
 or
 ```
-flake8 src/
+flake8 my_python_project/
 ```
 
 ### Type Checking
 To perform type checking, execute:
 ```
-mypy src/
+mypy my_python_project/
 ```
 
 ## Contributing

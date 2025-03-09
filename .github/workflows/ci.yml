@@ -29,13 +29,13 @@ jobs:
           poetry install
 
       - name: Run Pylint
-        run: poetry run pylint src tests
+        run: poetry run pylint my_python_project tests
 
       - name: Run Flake8
-        run: poetry run flake8 src tests
+        run: poetry run flake8 my_python_project tests
 
       - name: Run MyPy
-        run: poetry run mypy src
+        run: poetry run mypy my_python_project
 
       - name: Run tests
         run: poetry run pytest tests
