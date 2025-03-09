@@ -1,9 +1,14 @@
-import pytest
+"""
+Unit tests for the main module.
+"""
+
+from typing import Any
 from src.main import main
 
-def test_main(capfd):
+def test_main(capfd: Any) -> None:
+    """Test the main function output."""
     main()
-    out, err = capfd.readouterr()
+    out, _ = capfd.readouterr()
     assert out == "Hello, World!\n"
 
 # Add more test cases as needed
