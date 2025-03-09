@@ -56,6 +56,20 @@
                 }
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Run Black",
+            "type": "shell",
+            "command": "poetry run black my_python_project tests",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": [
+                        "/c"
+                    ]
+                }
+            },
+            "problemMatcher": []
         }
     ]
 }

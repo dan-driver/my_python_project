@@ -31,9 +31,10 @@ def test_main_as_script() -> None:
         [sys.executable, "-m", "my_python_project.llm_model"],
         capture_output=True,
         text=True,
-        check=True
+        check=True,
     )
     assert "eggs" in result.stdout
     assert not result.returncode
+
 
 # Add more test cases as needed
