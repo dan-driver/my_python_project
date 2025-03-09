@@ -37,11 +37,11 @@ jobs:
     steps:
       - name: Activate virtual environment
         run: |
-          source .venv/bin/activate
+          source ${GITHUB_WORKSPACE}/.venv/bin/activate
 
       - name: Run Pylint
         run: |
-          source .venv/bin/activate
+          source ${GITHUB_WORKSPACE}/.venv/bin/activate
           pylint my_python_project tests
 
       - name: Run Flake8
