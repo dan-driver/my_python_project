@@ -1,5 +1,11 @@
 # My Python Project
 
+![Pylint](https://img.shields.io/github/workflow/status/<your-github-username>/<your-repo-name>/CI?label=pylint&logo=github)
+![Flake8](https://img.shields.io/github/workflow/status/<your-github-username>/<your-repo-name>/CI?label=flake8&logo=github)
+![Mypy](https://img.shields.io/github/workflow/status/<your-github-username>/<your-repo-name>/CI?label=mypy&logo=github)
+
+This is a base python project with project configuration with QA and CI setup as a starting point for other projects.
+
 ## Overview
 This project is a Python application that includes a main module and corresponding tests. It is set up with various tools for code quality and continuous integration.
 

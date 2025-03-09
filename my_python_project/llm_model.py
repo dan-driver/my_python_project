@@ -26,6 +26,4 @@ def ask_gpt2(query: str) -> str:
 
 
 if __name__ == "__main__":
-    question = "How many eggs are there in a dozen eggs?"
-    answer = ask_gpt2(question)
-    print(answer)
+    print(ask_gpt2("How many eggs are there in a dozen eggs?"))
