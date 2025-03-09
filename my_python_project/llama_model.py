@@ -4,6 +4,7 @@ Module to interact with the LLaMA model from Hugging Face.
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+
 def ask_llama(query: str) -> str:
     """
     Ask a question to the LLaMA model and get a response.
@@ -22,6 +23,7 @@ def ask_llama(query: str) -> str:
     outputs = model.generate(**inputs)
     model_answer = str(tokenizer.decode(outputs[0], skip_special_tokens=True))
     return model_answer
+
 
 if __name__ == "__main__":
     question = "How many are there in a dozen?"
