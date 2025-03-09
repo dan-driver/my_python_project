@@ -4,7 +4,7 @@
         {
             "label": "Create virtual environment",
             "type": "shell",
-            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\pip install -r requirements.txt",
+            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\pip install -e .",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
