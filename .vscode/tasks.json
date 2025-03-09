@@ -2,13 +2,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Create virtual environment",
+            "label": "Create virtual environment and install dependencies",
             "type": "shell",
-            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\pip install -e .",
+            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\activate && python -m pip install poetry && poetry install",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
-                    "args": ["/c"]
+                    "args": [
+                        "/c"
+                    ]
                 }
             },
             "problemMatcher": []

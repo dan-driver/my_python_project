@@ -10,23 +10,22 @@ files = "src"
 ignore_missing_imports = true
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "my-python-project"
 version = "0.1.0"
 description = "A sample Python project"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Daniel Driver <dandriver@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-pytest = "^6.2.4"
-pylint = "^2.7.4"
-mypy = "^0.812"
-black = "^21.5b1"
-transformers = "^4.0.0"
-torch = "^1.7.0"
+python = ">=3.13.0"  # Update this to match your local Python version
+transformers = ">=4.0.0"
+torch = ">=1.7.0"
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
+[tool.poetry.group.dev.dependencies]
+pytest = ">=6.2.4"
+pylint = ">=2.7.4"
+mypy = ">=0.812"
+black = ">=21.5b1"
