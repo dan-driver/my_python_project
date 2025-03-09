@@ -1,7 +1,7 @@
 # My Python Project
 
 [![CI](https://github.com/dan-driver/my_python_project/actions/workflows/ci.yml/badge.svg)](https://github.com/dan-driver/my_python_project/actions/workflows/ci.yml)
-![Coverage](https://codecov.io/gh/dan-driver/my-python-project/branch/main/graph/badge.svg)
+[![codecov](https://codecov.io/gh/dan-driver/my_python_project/graph/badge.svg?token=ABECRCOUG2)](https://codecov.io/gh/dan-driver/my_python_project)
 
 This is a base python project with project configuration with QA and CI setup as a starting point for other projects.
 
