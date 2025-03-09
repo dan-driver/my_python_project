@@ -28,7 +28,7 @@ jobs:
           source .venv/bin/activate
           python -m pip install --upgrade pip
           pip install uv
-          uv pip install .
+          uv pip install . --extra dev
 
   lint:
     runs-on: ubuntu-latest
