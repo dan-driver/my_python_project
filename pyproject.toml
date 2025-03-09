@@ -10,24 +10,30 @@ files = "my_python_project"
 ignore_missing_imports = true
 
 [build-system]
-requires = ["poetry-core>=2.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.poetry]
+[project]
 name = "my-python-project"
 version = "0.1.0"
 description = "A sample Python project"
-authors = ["Daniel Driver <dandriver@gmail.com>"]
+authors = [
+    { name = "Daniel Driver", email = "dandriver@gmail.com" }
+]
+dependencies = [
+    "transformers>=4.0.0",
+    "torch>=1.7.0"
+]
 
-[tool.poetry.dependencies]
-python = ">=3.13.0"  # Update this to match your local Python version
-transformers = ">=4.0.0"
-torch = ">=1.7.0"
+[project.optional-dependencies]
+    dev = [
+        "pytest>=6.2.4",
+        "pylint>=2.7.4",
+        "mypy>=0.812",
+        "black>=21.5b1",
+        "flake8>=3.9.2",
+        "pytest-cov>=2.12.1"
+    ]
 
-[tool.poetry.group.dev.dependencies]
-pytest = ">=6.2.4"
-pylint = ">=2.7.4"
-mypy = ">=0.812"
-black = ">=21.5b1"
-flake8 = ">=3.9.2"
-pytest-cov = ">=2.12.1"
+[tool.uv]
+tools = ["hatchling"]

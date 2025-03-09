@@ -4,7 +4,7 @@
         {
             "label": "Create virtual environment and install dependencies",
             "type": "shell",
-            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\activate && python -m pip install poetry && poetry install",
+            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\activate && python -m pip install --upgrade pip && python -m pip install uv && uv pip install --extra dev -e . -r pyproject.toml",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
@@ -18,7 +18,7 @@
         {
             "label": "Run Pylint",
             "type": "shell",
-            "command": "poetry run pylint my_python_project tests",
+            "command": ".venv\\Scripts\\activate && pylint my_python_project tests",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
@@ -32,7 +32,7 @@
         {
             "label": "Run Mypy",
             "type": "shell",
-            "command": "poetry run mypy my_python_project",
+            "command": ".venv\\Scripts\\activate && mypy my_python_project",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
@@ -46,7 +46,7 @@
         {
             "label": "Run Flake8",
             "type": "shell",
-            "command": "poetry run flake8 my_python_project tests",
+            "command": ".venv\\Scripts\\activate && flake8 my_python_project tests",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
@@ -60,7 +60,7 @@
         {
             "label": "Run Black",
             "type": "shell",
-            "command": "poetry run black my_python_project tests",
+            "command": ".venv\\Scripts\\activate && black my_python_project tests",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",

@@ -7,7 +7,6 @@
 [![flake8](https://img.shields.io/badge/lint-flake8-green)](https://flake8.pycqa.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-
 This is a base python project with project configuration with QA and CI setup as a starting point for other projects.
 
 ## Overview
@@ -36,7 +35,11 @@ Make sure you have Python 3.6 or higher installed on your machine.
    ```
 3. Install the required dependencies:
    ```
-   pip install -r requirements.txt
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+   python -m pip install --upgrade pip
+   python -m pip install uv
+   uv pip install -e .
    ```
 
 ### Usage
