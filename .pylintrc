@@ -1,0 +1,21 @@
+[MASTER]
+disable=missing-docstring, invalid-name, too-few-public-methods
+
+[FORMAT]
+max-line-length=88
+
+[MESSAGES CONTROL]
+# Enable the following messages
+enable=all
+
+[DESIGN]
+max-args=5
+max-locals=15
+max-module-lines=1000
+
+[TYPECHECK]
+ignored-modules=typing_extensions
+
+[REPORTS]
+output-format=colorized
+reports=no

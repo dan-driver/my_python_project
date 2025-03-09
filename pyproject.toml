@@ -1,0 +1,26 @@
+[tool.black]
+line-length = 88
+
+[tool.pylint]
+load-plugins = ["pylint_flask"]
+disable = ["C0114", "C0115", "C0116"]
+
+[tool.mypy]
+files = "src"
+ignore_missing_imports = true
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta" 
+
+[project]
+name = "my-python-project"
+version = "0.1.0"
+description = "A sample Python project"
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+dependencies = [
+    "pytest",
+    "pylint",
+    "mypy",
+    "black",
+]
