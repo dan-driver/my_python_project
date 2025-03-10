@@ -21,7 +21,7 @@ jobs:
           python-version: '3.13'
 
       - name: Create virtual environment
-        run: python -m venv ${GITHUB_WORKSPACE}/.venv
+        run: python -m venv .venv
 
       - name: Activate virtual environment and install dependencies
         run: |
