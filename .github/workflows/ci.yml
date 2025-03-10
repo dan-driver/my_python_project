@@ -25,7 +25,7 @@ jobs:
 
       - name: Activate virtual environment and install dependencies
         run: |
-          source ${GITHUB_WORKSPACE}/.venv/bin/activate
+          source .venv/bin/activate
           python -m pip install --upgrade pip
           pip install uv
           uv pip install . --extra dev -r pyproject.toml
@@ -43,6 +43,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: venv
+
       - name: Activate virtual environment
         run: |
           source .venv/bin/activate
