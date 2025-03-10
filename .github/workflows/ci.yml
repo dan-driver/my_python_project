@@ -46,15 +46,6 @@ jobs:
         run: |
           black --check my_python_project tests
 
-      - name: Download a single artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: venv
-
-      - name: Activate virtual environment
-        run: |
-          source .venv/bin/activate
-
       - name: Run tests with coverage
         run: |
           pytest --cov=my_python_project --cov-report=xml --cov-report=term-missing --cov-report=xml:coverage.xml
