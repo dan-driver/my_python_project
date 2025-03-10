@@ -32,22 +32,27 @@ jobs:
 
       - name: Run Pylint
         run: |
+          source .venv/bin/activate
           pylint my_python_project tests
 
       - name: Run Flake8
         run: |
+          source .venv/bin/activate
           flake8 my_python_project tests
 
       - name: Run MyPy
         run: |
+          source .venv/bin/activate
           mypy my_python_project
 
       - name: Run Black
         run: |
+          source .venv/bin/activate
           black --check my_python_project tests
 
       - name: Run tests with coverage
         run: |
+          source .venv/bin/activate
           pytest --cov=my_python_project --cov-report=xml --cov-report=term-missing --cov-report=xml:coverage.xml
 
       - name: Upload coverage reports to Codecov
