@@ -39,7 +39,7 @@ Make sure you have Python 3.6 or higher installed on your machine.
    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
    python -m pip install --upgrade pip
    python -m pip install uv
-   uv pip install -e .
+   uv pip install . --extra dev -r pyproject.toml
    ```
 
 ### Usage
