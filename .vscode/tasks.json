@@ -4,7 +4,7 @@
         {
             "label": "Create virtual environment and install dependencies",
             "type": "shell",
-            "command": "C:\\Users\\cheer\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv .venv && .venv\\Scripts\\activate && python -m pip install --upgrade pip && python -m pip install uv && uv pip install --extra dev -e . -r pyproject.toml",
+            "command": "python -m venv .venv && .venv\\Scripts\\activate && python -m pip install --upgrade pip && python -m pip install uv && uv pip install --extra dev -e . -r pyproject.toml",
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
@@ -13,7 +13,11 @@
                     ]
                 }
             },
-            "problemMatcher": []
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Run Pylint",
